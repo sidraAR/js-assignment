@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //=================>Chpter 21-25<===============
+//Qno 01
+
+// var firstName = prompt("Enter your first name:");
+// var lastName = prompt("Enter your last name:");
+
+// var fullName = firstName + " " + lastName;
+
+// alert("Hi, " + fullName + "!");
+
+//Qno 02
+
+// var phoneModel = (prompt("Enter your favorite mobile phone model:"));
+
+// var inputLength = phoneModel.length;
+
+// alert("The length of your input is: " + inputLength);
+
+//Qno 03
+
+// var word = "Pakistani";
+// var index = word.indexOf('n');
+
+// console.log("The index of 'n' in 'Pakistani' is:", index);
+
+// Qno 04
+
+// var phrase = "Hello World";
+// var lastIndex = phrase.lastIndexOf('l');
+
+// console.log("The last index of 'l' in 'Hello World' is:", lastIndex);
+
+//Qno 05
+
+
+//Qno 05
+
+// var word = "Pakistani";
+// var character = word.charAt(3);
+
+// console.log("The character at the 3rd index in 'Pakistani' is:", character);
+
+//Qno 06
+
+// var firstName = prompt("Please enter your first name:");
+// var lastName = prompt("Please enter your last name:");
+
+// var fullName = firstName.concat(" ", lastName);
+
+// console.log("Hello, " + fullName + "!");
+
+//Qno 07
+// var city = "Hyderabad";    
+// var newCity = city.replace("Hyder", "Islam");
+
+// document.write("The new city name is: " + newCity);
+
+//Qno 08
+
+// var str = "472";
+// var num = Number(str);
+
+// console.log("String value: " + str + " (Type: " + typeof str + ")");
+// console.log("Number value: " + num + " (Type: " + typeof num + ")");
+
+//Qno 09
+
+// var userInput = prompt("Please enter a string:");
+// var upperCaseInput = userInput.toUpperCase();
+
+// console.log("Input in capital letters: " + upperCaseInput);
+
+//Qno 10
+
+// var userInput = prompt("Please enter a string:");
+// var capitalizedInput = userInput.toUpperCase();
+
+// alert("Input in capital letters: " + capitalizedInput);
+
+
+//Qno 11
+
+// var userInput = prompt("Please enter a string:");
+// // var titleCaseInput = userInput.toLowerCase().replace(/\b\w/g, char => char.toUpperCase());
+// var titleCase = "hamza";
+// console.log( titleCase.charAt(0).toUpperCase() +  titleCase.slice(1).toLowerCase());
+ 
+
+// console.log("Input in title case: " +  titleCase);
+
+//Qno 12
+
+// var num = 35.36;
+// var numStr = num.toString();
+
+// var numWithoutDot = numStr.replace(".", "");
+
+
+// document.write("Number without dot: " + numWithoutDot);
+
+//Qno 13
+
+// var username = prompt("Enter a username (avoid using @, ., ,, !):");
+
+//  while (/[@.,!]/.test(username)) {
+//      username = prompt("Invalid username. Please enter a valid username without @, ., ,, or !:");
+//  }
+
+//  alert("Username accepted: " + username);
+
+
+
+
+
+// //Qno 14
+// const A = ["cake", "apple pie", "cookie", "chips", "patties"];
+
+// function searchItem() {
+//     let search = prompt("Enter an item to search for:").toLowerCase();
+//     let index = A.findIndex(item => item.toLowerCase() === search);
+
+//     if (index !== -1) {
+//         alert(The item '${search}' is available at index ${index} in our bakery.);
+//     } else {
+//         alert(The item '${search}' is not found in our bakery.);
+//     }
+// }
+
+// searchItem();
+// //Qno 15
+
+
+
+
+
+
+// //Qno 16
+
+// var university = "University of Karachi";
+// var array = university.split(" ");
+
+
+// array.forEach(function(element) {
+//     console.log(element);
+// });
+
+
+// //Qno 17
+// var userInput = prompt("Enter a string:");
+// var lastCharacter = userInput.charAt(userInput.length - 1);
+
+// alert("The last character of your input is: " + lastCharacter);
+
+// //Qno 18
+// var sentence = "The quick brown fox jumps over the lazy dog";
+// var count = (sentence.toLowerCase().split(" ").filter(word => word === "the")).length;
+
+// console.log("The word 'the' occurs " + count + " times.");
+//=================>Chpter 26-30<===============
+//Qno 01
+// var number = parseInt(prompt("Enter a positive integer:"), 10);
+// if (number > 0) {
+//     alert("You entered: " + number);
+// } else {
+//     alert("Please enter a valid positive integer.");
+// }
+
+// var userInput = prompt("Enter a positive number:");
+// var number = parseFloat(userInput);
+
+
+// if (isNaN(number) || number <= 0) {
+//     alert("Please enter a valid positive number.");
+// } else {
+    
+//     document.body.innerHTML = `
+//         <p>Number: ${number}</p>
+//         <p>Round Off Value: ${Math.round(number)}</p>
+//         <p>Floor Value: ${Math.floor(number)}</p>
+//         <p>Ceil Value: ${Math.ceil(number)}</p>`;
+// }
+
+//Qno 02
+
+// var userInput = prompt("Enter a negative floating-point number:");
+// var number = parseFloat(userInput);
+
+
+// if (isNaN(number) || number >= 0) {
+//     alert("Please enter a valid negative floating-point number.");
+// } else {
+   
+//     document.body.innerHTML = `
+//         <p>Number: ${number}</p>
+//         <p>Round Off Value: ${Math.round(number)}</p>
+//         <p>Floor Value: ${Math.floor(number)}</p>
+//         <p>Ceil Value: ${Math.ceil(number)}</p>`;
+// }
+
+//Qno 03
+
+// var userInput = prompt("Enter a number:");
+// var number = parseFloat(userInput);
+// var absoluteValue = Math.abs(number);
+
+
+// document.body.innerHTML = <p>Absolute Value of ${number} is ${absoluteValue}</p>;
+
+//Qno 04
+
+// var diceValue = Math.floor(Math.random() * 6) + 1;
+
+// document.body.innerHTML = <p>Dice rolled: ${diceValue}</p>;
+
+//Qno 05
+
+// function tossCoin() {
+//     var randomNumber = Math.random(); // Generate a random number between 0 and 1
+//     if (randomNumber < 0.5) {
+//         return 'Heads';
+//     } else {
+//         return 'Tails';
+//     }
+// }
+
+// var result = tossCoin();
+
+// document.body.innerHTML = <p>Coin toss result: ${result}</p>;
+
+//Qno 06
+
+// var randomNumber = Math.floor(Math.random() * 100) + 1;
+
+
+// document.body.innerHTML = <p>Random number between 1 and 100: ${randomNumber}</p>;
+
+// //Qno 07
+
+// var userInput = prompt("Enter your weight (e.g., 50, 50kgs, 50.2kgs, 50.2kilograms):");
+// var weight = parseFloat(userInput);
+
+// document.body.innerHTML = <p>Weight: ${weight} kg</p>;
+
+// //Qno 08
+
+// var secretNumber = Math.floor(Math.random() * 10) + 1;
+// var userInput = prompt("Guess a number between 1 and 10:");
+// var userGuess = parseInt(userInput, 10);
+
+
+// if (userGuess === secretNumber) {
+//     alert("Congratulations! You guessed the correct number.");
+// } else {
+//     alert(Sorry, the correct number was ${secretNumber}.);
+// }
+    </script>
+    
+</body>
+</html>
